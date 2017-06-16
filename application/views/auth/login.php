@@ -28,5 +28,4 @@
 
 
     <?php echo form_close(); ?>
-    <a href='<?php echo site_url('auth/create_user')?>'>Register</a>
 </div>
