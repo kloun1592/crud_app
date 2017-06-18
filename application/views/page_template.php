@@ -10,27 +10,32 @@ foreach($css_files as $file): ?>
 <script src="<?php echo $file; ?>"></script>
 <?php endforeach; ?>
 <style type='text/css'>
-body
-{
-font-family: Arial;
-font-size: 14px;
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+  background: -moz-linear-gradient(right, #76b852, #8DC26F);
+  background: -o-linear-gradient(right, #76b852, #8DC26F);
+  background: linear-gradient(to left, #76b852, #8DC26F);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-a {
-	color: blue;
+
+.menu a
+{
+	color: #fff;
 	text-decoration: none;
-	font-size: 14px;
-}
-a:hover
-{
-text-decoration: underline;
+	font-size: 18px;
 }
 </style>
 </head>
 <body>
-<div>
-  <a href='<?php echo site_url('main/computers')?>'>Computers</a> |
-  <a href='<?php echo site_url('main/soft')?>'>Soft</a> |
-  <a href="<?php echo site_url('auth/logout'); ?>">Logout</a>
+<div class="menu">
+  <a href='<?php echo site_url('main/computers');?>'>Computers</a> |
+  <a href='<?php echo site_url('main/soft');?>'>Soft</a> |
+  <a href="<?php echo site_url('auth/logout'); ?>">Logout</a> |
+  <a href="<?php echo site_url('auth/create_user'); ?>">Register new user</a> |
+  <a href="<?php echo site_url('auth/'); ?>">All users</a>
 </div>
 <div style='height:20px;'></div>
 	<div>

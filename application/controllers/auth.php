@@ -15,6 +15,7 @@ class Auth extends Controller {
 		$this->load->library('form_validation');
 		$this->load->database();
 		$this->load->helper('url');
+		$this->load->helper('security');
 	}
 
 	//redirect if needed, otherwise display the user list
