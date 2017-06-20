@@ -45,6 +45,21 @@ class Main extends CI_Controller
     }
   }
 
+  public function first_query()
+  {
+  	$this->load->view('first_query');
+  }
+
+  public function second_query()
+  {
+    $this->load->view('second_query');
+  }
+
+  public function third_query()
+  {
+    $this->load->view('third_query');
+  }
+
   public function _example_output($output = null)
   {
     $this->load->view('page_template', $output);

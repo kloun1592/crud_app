@@ -35,7 +35,10 @@ body {
   <a href='<?php echo site_url('main/soft');?>'>Soft</a> |
   <a href="<?php echo site_url('auth/logout'); ?>">Logout</a> |
   <a href="<?php echo site_url('auth/create_user'); ?>">Register new user</a> |
-  <a href="<?php echo site_url('auth/'); ?>">All users</a>
+  <a href="<?php echo site_url('auth/'); ?>">All users</a> |
+  <a href="<?php echo site_url('main/first_query'); ?>">First query</a> |
+  <a href="<?php echo site_url('main/second_query'); ?>">Second query</a> |
+  <a href="<?php echo site_url('main/third_query'); ?>">Third query</a>
 </div>
 <div style='height:20px;'></div>
 	<div>
